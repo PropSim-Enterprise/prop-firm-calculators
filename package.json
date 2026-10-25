@@ -1,0 +1,23 @@
+{
+  "name": "prop-firm-calculators",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Free prop firm calculators: drawdown and daily loss, position size, the expected cost of getting funded, payouts and a prop firm revenue model.",
+  "keywords": ["prop firm", "prop firm calculator", "drawdown calculator", "position size calculator", "lot size calculator", "funded trader", "trading challenge", "prop trading"],
+  "homepage": "https://propsim-enterprise.github.io/prop-firm-calculators/",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "pages": "node scripts/pages.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vitest run && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1",
+    "vitest": "^3.2.4"
+  }
+}

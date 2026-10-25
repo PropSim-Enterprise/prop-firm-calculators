@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prop Firm Revenue Calculator: Model a Prop Firm's Monthly Profit | PropSim</title>
+    <meta name="description" content="For prop firm founders: model a month of challenge sales, payouts, payment processing, affiliates and platform costs, with pass rates from real challenge data." />
+    <link rel="canonical" href="https://propsim-enterprise.github.io/prop-firm-calculators/revenue/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prop Firm Revenue Calculator: Model a Prop Firm's Monthly Profit | PropSim" />
+    <meta property="og:description" content="For prop firm founders: model a month of challenge sales, payouts, payment processing, affiliates and platform costs, with pass rates from real challenge data." />
+    <meta property="og:url" content="https://propsim-enterprise.github.io/prop-firm-calculators/revenue/" />
+    <meta property="og:image" content="https://propsim-enterprise.github.io/prop-firm-calculators/og/revenue.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Prop firm revenue calculator","url":"https://propsim-enterprise.github.io/prop-firm-calculators/revenue/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"PropSim","url":"https://propsim.markets"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do prop firms make money?","acceptedAnswer":{"@type":"Answer","text":"Mostly from evaluation fees. Because most attempts fail, the fees from many traders fund the payouts to the few who are funded and profitable, plus the firm's costs and margin."}},{"@type":"Question","name":"What pass rate should a prop firm plan for?","acceptedAnswer":{"@type":"Answer","text":"It depends on the firm's rules. In the PropSim Prop Trading Index for the week of 2026-10-19, 14.1% of accounts cleared phase 1 and 34% of phase 2 accounts cleared it. Test your own rules against your own data."}},{"@type":"Question","name":"What does prop firm software cost?","acceptedAnswer":{"@type":"Answer","text":"Pricing models differ: flat monthly fees, per-account fees and revenue shares. PropSim's prop firm cost page compares published pricing with sources."}}]}</script>
+  </head>
+  <body>
+    <header class="site-header"><div class="wrap">
+  <a class="brand" href="../"><img src="../src/img/propsim-icon.png" alt="" width="28" height="28" /> Prop Firm Calculators</a>
+  <nav class="site-nav" aria-label="Calculators"><a href="../drawdown/">Drawdown</a><a href="../position-size/">Position size</a><a href="../challenge-cost/">Challenge cost</a><a href="../payout/">Payout</a><a href="../revenue/" aria-current="page">Revenue (founders)</a></nav>
+</div></header>
+    <main class="wrap">
+      <div class="page-head"><h1>Prop firm revenue calculator</h1><p>For founders: model a typical month of a prop firm, from challenge sales to payouts, payment processing, affiliate commission and platform costs.</p></div>
+      <div class="calc" id="calc" data-calc="revenue"><noscript>This calculator needs JavaScript.</noscript></div>
+      <p class="embed-credit"><a href="https://propsim-enterprise.github.io/prop-firm-calculators/revenue/" target="_blank" rel="noopener">Prop firm revenue calculator</a> by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculator_embed&amp;utm_campaign=prop-firm-calculators" target="_blank" rel="noopener">PropSim</a></p>
+      <article class="content">
+        
+<h2>What the model counts</h2>
+<ul>
+<li><strong>Sales</strong>: challenges sold × average price.</li>
+<li><strong>Payouts</strong>: challenges × phase 1 pass rate × phase 2 pass rate gives the funded traders; the share of them who reach a payout, times the average payout, gives what you pay out.</li>
+<li><strong>Costs</strong>: payment processing and affiliate commission as a share of sales, plus your platform's monthly and per-account fees.</li>
+</ul>
+<p>It is a steady-state month: it assumes the traders being paid this month were funded from similar earlier months. The default pass rates are from the <a href="https://propsim.markets/prop-trading-index?utm_source=github&amp;utm_medium=calculators&amp;utm_campaign=prop-firm-calculators">PropSim Prop Trading Index</a>; the payout assumptions are yours.</p>
+<h2>Plan the rest of the business</h2>
+<p>For what platforms charge, see <a href="https://propsim.markets/prop-firm-cost?utm_source=github&amp;utm_medium=calculators&amp;utm_campaign=prop-firm-calculators">what it costs to start a prop firm</a> and the <a href="https://propsim.markets/compare?utm_source=github&amp;utm_medium=calculators&amp;utm_campaign=prop-firm-calculators">white-label providers compared</a>. For the plan itself, use the free <a href="https://propsim.markets/prop-firm-business-plan-template?utm_source=github&amp;utm_medium=calculators&amp;utm_campaign=prop-firm-calculators">prop firm business plan template</a>.</p>
+        <h2>Questions</h2>
+        <details><summary>How do prop firms make money?</summary><p>Mostly from evaluation fees. Because most attempts fail, the fees from many traders fund the payouts to the few who are funded and profitable, plus the firm's costs and margin.</p></details>
+<details><summary>What pass rate should a prop firm plan for?</summary><p>It depends on the firm's rules. In the PropSim Prop Trading Index for the week of 2026-10-19, 14.1% of accounts cleared phase 1 and 34% of phase 2 accounts cleared it. Test your own rules against your own data.</p></details>
+<details><summary>What does prop firm software cost?</summary><p>Pricing models differ: flat monthly fees, per-account fees and revenue shares. PropSim's prop firm cost page compares published pricing with sources.</p></details>
+        <h2>Embed this calculator</h2>
+        <p>Free to use on your own site. Copy this code:</p>
+        <pre><code>&lt;iframe src="https://propsim-enterprise.github.io/prop-firm-calculators/revenue/?embed" width="100%" height="980" style="border:0" loading="lazy" title="Prop firm revenue calculator"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://propsim-enterprise.github.io/prop-firm-calculators/revenue/"&gt;Prop firm revenue calculator&lt;/a&gt; by &lt;a href="https://propsim.markets"&gt;PropSim&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <div class="cta">
+          <h2>Thinking of starting a prop firm?</h2>
+          <p>PropSim runs the whole firm on your brand: storefront and checkout, a risk engine that checks every tick against your rules, a trader terminal, payouts, CRM and KYC. Start on the free plan.</p>
+          <a class="button" href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_cta&amp;utm_campaign=prop-firm-calculators">Start your prop firm free</a>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="wrap">Free and open source (MIT). Made by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_footer&amp;utm_campaign=prop-firm-calculators">PropSim</a>, prop firm software. <a href="https://github.com/PropSim-Enterprise/prop-firm-calculators">Source on GitHub</a>.</div></footer>
+    <script type="module" src="../src/main.ts"></script>
+  </body>
+</html>
