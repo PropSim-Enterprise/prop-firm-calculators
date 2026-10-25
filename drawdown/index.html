@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prop Firm Drawdown Calculator: Daily Loss and Trailing Drawdown | PropSim</title>
+    <meta name="description" content="Free prop firm drawdown calculator. See your daily loss floor, your static or trailing maximum loss floor, and how much you can still lose before a breach." />
+    <link rel="canonical" href="https://propsim-enterprise.github.io/prop-firm-calculators/drawdown/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prop Firm Drawdown Calculator: Daily Loss and Trailing Drawdown | PropSim" />
+    <meta property="og:description" content="Free prop firm drawdown calculator. See your daily loss floor, your static or trailing maximum loss floor, and how much you can still lose before a breach." />
+    <meta property="og:url" content="https://propsim-enterprise.github.io/prop-firm-calculators/drawdown/" />
+    <meta property="og:image" content="https://propsim-enterprise.github.io/prop-firm-calculators/og/drawdown.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Prop firm drawdown calculator","url":"https://propsim-enterprise.github.io/prop-firm-calculators/drawdown/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"PropSim","url":"https://propsim.markets"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the daily drawdown in a prop firm?","acceptedAnswer":{"@type":"Answer","text":"The most an account may lose in one trading day, usually 4% to 5% of the starting balance, measured from the balance or equity at the start of the day. Falling below it ends the challenge."}},{"@type":"Question","name":"What is trailing drawdown?","acceptedAnswer":{"@type":"Answer","text":"A maximum loss floor that follows the account's highest equity at a fixed distance. It rises as the account makes new highs and never moves down."}},{"@type":"Question","name":"Does the daily loss limit include open trades?","acceptedAnswer":{"@type":"Answer","text":"At most firms, yes: the limit is checked against equity, which includes floating losses on open trades, not only closed trades."}},{"@type":"Question","name":"When does the daily loss limit reset?","acceptedAnswer":{"@type":"Answer","text":"Usually at midnight on the broker's server clock, which for many MetaTrader brokers is UTC+2 or UTC+3. Your firm's rules state the exact time."}}]}</script>
+  </head>
+  <body>
+    <header class="site-header"><div class="wrap">
+  <a class="brand" href="../"><img src="../src/img/propsim-icon.png" alt="" width="28" height="28" /> Prop Firm Calculators</a>
+  <nav class="site-nav" aria-label="Calculators"><a href="../drawdown/" aria-current="page">Drawdown</a><a href="../position-size/">Position size</a><a href="../challenge-cost/">Challenge cost</a><a href="../payout/">Payout</a><a href="../revenue/">Revenue (founders)</a></nav>
+</div></header>
+    <main class="wrap">
+      <div class="page-head"><h1>Prop firm drawdown calculator</h1><p>Find where the daily loss limit and the maximum loss sit on your evaluation or funded account, for static and trailing drawdown, and how much you can lose before either one is hit.</p></div>
+      <div class="calc" id="calc" data-calc="drawdown"><noscript>This calculator needs JavaScript.</noscript></div>
+      <p class="embed-credit"><a href="https://propsim-enterprise.github.io/prop-firm-calculators/drawdown/" target="_blank" rel="noopener">Prop firm drawdown calculator</a> by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculator_embed&amp;utm_campaign=prop-firm-calculators" target="_blank" rel="noopener">PropSim</a></p>
+      <article class="content">
+        
+<h2>How the daily loss limit works</h2>
+<p>The daily loss limit is the most you may lose in one trading day. Firms measure it in one of three ways, and the calculator supports all three:</p>
+<ul>
+<li><strong>A percentage of the starting balance</strong>, counted down from the day's opening balance. On a $100,000 account with a 5% limit, you may fall $5,000 below wherever the day opened.</li>
+<li><strong>A percentage of the day's opening balance</strong>, so the limit grows and shrinks with the account.</li>
+<li><strong>A percentage of the higher of the day's opening balance and opening equity</strong>, which also counts profit in open trades at the reset.</li>
+</ul>
+<p>The floor is <code>opening level − limit</code>. Most firms count losses in <strong>equity</strong>, open trades included, so a trade that dips below the floor and recovers still breaches.</p>
+<h2>Static vs trailing drawdown</h2>
+<p><strong>Static</strong>: the floor is fixed at <code>starting balance − maximum loss</code> and never moves. <strong>Trailing</strong>: the floor follows your highest equity at the same distance, so it rises as you make money and never falls back. Some firms <strong>lock</strong> a trailing floor once it reaches the starting balance.</p>
+<p>The calculator shows both floors and which one you will hit first. Rules vary between firms, so check yours.</p>
+        <h2>Questions</h2>
+        <details><summary>What is the daily drawdown in a prop firm?</summary><p>The most an account may lose in one trading day, usually 4% to 5% of the starting balance, measured from the balance or equity at the start of the day. Falling below it ends the challenge.</p></details>
+<details><summary>What is trailing drawdown?</summary><p>A maximum loss floor that follows the account's highest equity at a fixed distance. It rises as the account makes new highs and never moves down.</p></details>
+<details><summary>Does the daily loss limit include open trades?</summary><p>At most firms, yes: the limit is checked against equity, which includes floating losses on open trades, not only closed trades.</p></details>
+<details><summary>When does the daily loss limit reset?</summary><p>Usually at midnight on the broker's server clock, which for many MetaTrader brokers is UTC+2 or UTC+3. Your firm's rules state the exact time.</p></details>
+        <h2>Embed this calculator</h2>
+        <p>Free to use on your own site. Copy this code:</p>
+        <pre><code>&lt;iframe src="https://propsim-enterprise.github.io/prop-firm-calculators/drawdown/?embed" width="100%" height="820" style="border:0" loading="lazy" title="Prop firm drawdown calculator"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://propsim-enterprise.github.io/prop-firm-calculators/drawdown/"&gt;Prop firm drawdown calculator&lt;/a&gt; by &lt;a href="https://propsim.markets"&gt;PropSim&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <div class="cta">
+          <h2>Thinking of starting a prop firm?</h2>
+          <p>PropSim runs the whole firm on your brand: storefront and checkout, a risk engine that checks every tick against your rules, a trader terminal, payouts, CRM and KYC. Start on the free plan.</p>
+          <a class="button" href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_cta&amp;utm_campaign=prop-firm-calculators">Start your prop firm free</a>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="wrap">Free and open source (MIT). Made by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_footer&amp;utm_campaign=prop-firm-calculators">PropSim</a>, prop firm software. <a href="https://github.com/PropSim-Enterprise/prop-firm-calculators">Source on GitHub</a>.</div></footer>
+    <script type="module" src="../src/main.ts"></script>
+  </body>
+</html>

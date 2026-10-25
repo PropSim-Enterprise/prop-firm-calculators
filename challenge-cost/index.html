@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prop Firm Challenge Cost Calculator: Expected Cost to Get Funded | PropSim</title>
+    <meta name="description" content="How much does it really cost to get funded? Combine the challenge fee with real pass rates to see the expected attempts and spend, with retry discounts and fee refunds." />
+    <link rel="canonical" href="https://propsim-enterprise.github.io/prop-firm-calculators/challenge-cost/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prop Firm Challenge Cost Calculator: Expected Cost to Get Funded | PropSim" />
+    <meta property="og:description" content="How much does it really cost to get funded? Combine the challenge fee with real pass rates to see the expected attempts and spend, with retry discounts and fee refunds." />
+    <meta property="og:url" content="https://propsim-enterprise.github.io/prop-firm-calculators/challenge-cost/" />
+    <meta property="og:image" content="https://propsim-enterprise.github.io/prop-firm-calculators/og/challenge-cost.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Prop firm challenge cost calculator","url":"https://propsim-enterprise.github.io/prop-firm-calculators/challenge-cost/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"PropSim","url":"https://propsim.markets"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What percentage of traders pass prop firm challenges?","acceptedAnswer":{"@type":"Answer","text":"In the PropSim Prop Trading Index for the week of 2026-10-19, 14.1% of accounts cleared phase 1 and 34% of those that reached phase 2 cleared it: about 4.8% of attempts ended funded. The figures describe firms on the PropSim platform."}},{"@type":"Question","name":"Is a discounted retry worth it?","acceptedAnswer":{"@type":"Answer","text":"A retry discount lowers the cost of every attempt after the first. Enter it as a percentage to see how much it changes the expected cost of getting funded."}},{"@type":"Question","name":"Does a fee refund make the challenge free?","acceptedAnswer":{"@type":"Answer","text":"It returns the fee of the attempt that passed, once you are funded and paid out. The fees of the attempts that failed are not refunded."}}]}</script>
+  </head>
+  <body>
+    <header class="site-header"><div class="wrap">
+  <a class="brand" href="../"><img src="../src/img/propsim-icon.png" alt="" width="28" height="28" /> Prop Firm Calculators</a>
+  <nav class="site-nav" aria-label="Calculators"><a href="../drawdown/">Drawdown</a><a href="../position-size/">Position size</a><a href="../challenge-cost/" aria-current="page">Challenge cost</a><a href="../payout/">Payout</a><a href="../revenue/">Revenue (founders)</a></nav>
+</div></header>
+    <main class="wrap">
+      <div class="page-head"><h1>Prop firm challenge cost calculator</h1><p>A challenge fee is not the cost of getting funded: most attempts fail. Combine the fee with pass rates to see how many attempts it takes on average and what they cost.</p></div>
+      <div class="calc" id="calc" data-calc="challenge-cost"><noscript>This calculator needs JavaScript.</noscript></div>
+      <p class="embed-credit"><a href="https://propsim-enterprise.github.io/prop-firm-calculators/challenge-cost/" target="_blank" rel="noopener">Prop firm challenge cost calculator</a> by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculator_embed&amp;utm_campaign=prop-firm-calculators" target="_blank" rel="noopener">PropSim</a></p>
+      <article class="content">
+        
+<h2>The formula</h2>
+<pre><code>chance of funding per attempt = phase 1 pass rate × phase 2 pass rate
+expected attempts             = 1 ÷ chance
+expected cost                 = fee + (attempts − 1) × retry fee</code></pre>
+<p>If the firm refunds the fee with the first payout, the refunded fee is taken off once you are funded and paid.</p>
+<h2>Where the default pass rates come from</h2>
+<p>The defaults are from the <a href="https://propsim.markets/prop-trading-index?utm_source=github&amp;utm_medium=calculators&amp;utm_campaign=prop-firm-calculators">PropSim Prop Trading Index</a>, week of 2026-10-19: 14.1% of accounts cleared phase 1, and 34% of those that reached phase 2 cleared it, so about 4.8% of attempts ended funded. The figures describe accounts on firms using the PropSim platform, and they are averages: your own odds depend on how you trade. The weekly figures are free to download from the <a href="https://github.com/PropSim-Enterprise/prop-firm-pass-rates">prop firm pass rates dataset</a>.</p>
+        <h2>Questions</h2>
+        <details><summary>What percentage of traders pass prop firm challenges?</summary><p>In the PropSim Prop Trading Index for the week of 2026-10-19, 14.1% of accounts cleared phase 1 and 34% of those that reached phase 2 cleared it: about 4.8% of attempts ended funded. The figures describe firms on the PropSim platform.</p></details>
+<details><summary>Is a discounted retry worth it?</summary><p>A retry discount lowers the cost of every attempt after the first. Enter it as a percentage to see how much it changes the expected cost of getting funded.</p></details>
+<details><summary>Does a fee refund make the challenge free?</summary><p>It returns the fee of the attempt that passed, once you are funded and paid out. The fees of the attempts that failed are not refunded.</p></details>
+        <h2>Embed this calculator</h2>
+        <p>Free to use on your own site. Copy this code:</p>
+        <pre><code>&lt;iframe src="https://propsim-enterprise.github.io/prop-firm-calculators/challenge-cost/?embed" width="100%" height="700" style="border:0" loading="lazy" title="Prop firm challenge cost calculator"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://propsim-enterprise.github.io/prop-firm-calculators/challenge-cost/"&gt;Prop firm challenge cost calculator&lt;/a&gt; by &lt;a href="https://propsim.markets"&gt;PropSim&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <div class="cta">
+          <h2>Thinking of starting a prop firm?</h2>
+          <p>PropSim runs the whole firm on your brand: storefront and checkout, a risk engine that checks every tick against your rules, a trader terminal, payouts, CRM and KYC. Start on the free plan.</p>
+          <a class="button" href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_cta&amp;utm_campaign=prop-firm-calculators">Start your prop firm free</a>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="wrap">Free and open source (MIT). Made by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_footer&amp;utm_campaign=prop-firm-calculators">PropSim</a>, prop firm software. <a href="https://github.com/PropSim-Enterprise/prop-firm-calculators">Source on GitHub</a>.</div></footer>
+    <script type="module" src="../src/main.ts"></script>
+  </body>
+</html>

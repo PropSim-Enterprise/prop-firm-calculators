@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prop Firm Payout Calculator: Profit Split and Fee Refund | PropSim</title>
+    <meta name="description" content="Work out your prop firm payout from profit, profit split, refunded fee and withdrawal fees, and how much profit you need for the payout you want." />
+    <link rel="canonical" href="https://propsim-enterprise.github.io/prop-firm-calculators/payout/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prop Firm Payout Calculator: Profit Split and Fee Refund | PropSim" />
+    <meta property="og:description" content="Work out your prop firm payout from profit, profit split, refunded fee and withdrawal fees, and how much profit you need for the payout you want." />
+    <meta property="og:url" content="https://propsim-enterprise.github.io/prop-firm-calculators/payout/" />
+    <meta property="og:image" content="https://propsim-enterprise.github.io/prop-firm-calculators/og/payout.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Prop firm payout calculator","url":"https://propsim-enterprise.github.io/prop-firm-calculators/payout/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"PropSim","url":"https://propsim.markets"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are prop firm payouts calculated?","acceptedAnswer":{"@type":"Answer","text":"Your profit for the period multiplied by your profit split, plus any refunded challenge fee, less any withdrawal or transfer fee."}},{"@type":"Question","name":"What is a typical prop firm profit split?","acceptedAnswer":{"@type":"Answer","text":"80% is a common starting split. The median across challenges in the PropSim Prop Trading Index for the week of 2026-10-19 was 80%."}},{"@type":"Question","name":"Is the challenge fee refunded?","acceptedAnswer":{"@type":"Answer","text":"Many firms refund the evaluation fee with the first payout. Check your firm's terms, and set the refund to $0 if it does not apply."}}]}</script>
+  </head>
+  <body>
+    <header class="site-header"><div class="wrap">
+  <a class="brand" href="../"><img src="../src/img/propsim-icon.png" alt="" width="28" height="28" /> Prop Firm Calculators</a>
+  <nav class="site-nav" aria-label="Calculators"><a href="../drawdown/">Drawdown</a><a href="../position-size/">Position size</a><a href="../challenge-cost/">Challenge cost</a><a href="../payout/" aria-current="page">Payout</a><a href="../revenue/">Revenue (founders)</a></nav>
+</div></header>
+    <main class="wrap">
+      <div class="page-head"><h1>Prop firm payout calculator</h1><p>See what a funded account actually pays you after the profit split, a refunded challenge fee and withdrawal fees, and how much profit you need for a target payout.</p></div>
+      <div class="calc" id="calc" data-calc="payout"><noscript>This calculator needs JavaScript.</noscript></div>
+      <p class="embed-credit"><a href="https://propsim-enterprise.github.io/prop-firm-calculators/payout/" target="_blank" rel="noopener">Prop firm payout calculator</a> by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculator_embed&amp;utm_campaign=prop-firm-calculators" target="_blank" rel="noopener">PropSim</a></p>
+      <article class="content">
+        
+<h2>The formula</h2>
+<pre><code>payout          = profit × your split + refunded fee − withdrawal fee
+profit for goal = (target payout + withdrawal fee) ÷ your split</code></pre>
+<p>A $6,000 profit at an 80% split is a $4,800 share. Add a $549 refunded fee and the payout is $5,349 before any withdrawal fee.</p>
+<h2>Typical profit splits</h2>
+<p>The median profit split across challenges in the <a href="https://propsim.markets/prop-trading-index?utm_source=github&amp;utm_medium=calculators&amp;utm_campaign=prop-firm-calculators">PropSim Prop Trading Index</a> (week of 2026-10-19) was 80%. Some firms raise the split as an account scales or after several payouts.</p>
+        <h2>Questions</h2>
+        <details><summary>How are prop firm payouts calculated?</summary><p>Your profit for the period multiplied by your profit split, plus any refunded challenge fee, less any withdrawal or transfer fee.</p></details>
+<details><summary>What is a typical prop firm profit split?</summary><p>80% is a common starting split. The median across challenges in the PropSim Prop Trading Index for the week of 2026-10-19 was 80%.</p></details>
+<details><summary>Is the challenge fee refunded?</summary><p>Many firms refund the evaluation fee with the first payout. Check your firm's terms, and set the refund to $0 if it does not apply.</p></details>
+        <h2>Embed this calculator</h2>
+        <p>Free to use on your own site. Copy this code:</p>
+        <pre><code>&lt;iframe src="https://propsim-enterprise.github.io/prop-firm-calculators/payout/?embed" width="100%" height="760" style="border:0" loading="lazy" title="Prop firm payout calculator"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://propsim-enterprise.github.io/prop-firm-calculators/payout/"&gt;Prop firm payout calculator&lt;/a&gt; by &lt;a href="https://propsim.markets"&gt;PropSim&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <div class="cta">
+          <h2>Thinking of starting a prop firm?</h2>
+          <p>PropSim runs the whole firm on your brand: storefront and checkout, a risk engine that checks every tick against your rules, a trader terminal, payouts, CRM and KYC. Start on the free plan.</p>
+          <a class="button" href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_cta&amp;utm_campaign=prop-firm-calculators">Start your prop firm free</a>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="wrap">Free and open source (MIT). Made by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_footer&amp;utm_campaign=prop-firm-calculators">PropSim</a>, prop firm software. <a href="https://github.com/PropSim-Enterprise/prop-firm-calculators">Source on GitHub</a>.</div></footer>
+    <script type="module" src="../src/main.ts"></script>
+  </body>
+</html>

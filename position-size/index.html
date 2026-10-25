@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prop Firm Position Size Calculator: Lot Size by Risk | PropSim</title>
+    <meta name="description" content="Free lot size calculator for prop firm accounts: the position size that risks a set share of your balance, and how many losing trades your daily and maximum loss allow." />
+    <link rel="canonical" href="https://propsim-enterprise.github.io/prop-firm-calculators/position-size/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prop Firm Position Size Calculator: Lot Size by Risk | PropSim" />
+    <meta property="og:description" content="Free lot size calculator for prop firm accounts: the position size that risks a set share of your balance, and how many losing trades your daily and maximum loss allow." />
+    <meta property="og:url" content="https://propsim-enterprise.github.io/prop-firm-calculators/position-size/" />
+    <meta property="og:image" content="https://propsim-enterprise.github.io/prop-firm-calculators/og/position-size.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Prop firm position size calculator","url":"https://propsim-enterprise.github.io/prop-firm-calculators/position-size/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"PropSim","url":"https://propsim.markets"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much should I risk per trade on a prop firm challenge?","acceptedAnswer":{"@type":"Answer","text":"There is no single right number. Many traders risk between 0.25% and 1% per trade so that a losing streak stays well inside the daily loss limit. Use the calculator to see how many losses in a row your choice allows."}},{"@type":"Question","name":"What is the pip value of 1 lot?","acceptedAnswer":{"@type":"Answer","text":"For USD-quoted forex pairs on a USD account, $10 per pip per standard lot. Other symbols differ; your broker's contract specification lists the value."}},{"@type":"Question","name":"Why does the calculator round the lot size down?","acceptedAnswer":{"@type":"Answer","text":"So the money at risk is never more than you chose. Rounding up by even one lot step would risk slightly more."}}]}</script>
+  </head>
+  <body>
+    <header class="site-header"><div class="wrap">
+  <a class="brand" href="../"><img src="../src/img/propsim-icon.png" alt="" width="28" height="28" /> Prop Firm Calculators</a>
+  <nav class="site-nav" aria-label="Calculators"><a href="../drawdown/">Drawdown</a><a href="../position-size/" aria-current="page">Position size</a><a href="../challenge-cost/">Challenge cost</a><a href="../payout/">Payout</a><a href="../revenue/">Revenue (founders)</a></nav>
+</div></header>
+    <main class="wrap">
+      <div class="page-head"><h1>Prop firm position size calculator</h1><p>Find the lot size that risks exactly the share of your balance you choose, and see how many losing trades in a row your daily loss limit and maximum loss can absorb.</p></div>
+      <div class="calc" id="calc" data-calc="position-size"><noscript>This calculator needs JavaScript.</noscript></div>
+      <p class="embed-credit"><a href="https://propsim-enterprise.github.io/prop-firm-calculators/position-size/" target="_blank" rel="noopener">Prop firm position size calculator</a> by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculator_embed&amp;utm_campaign=prop-firm-calculators" target="_blank" rel="noopener">PropSim</a></p>
+      <article class="content">
+        
+<h2>The formula</h2>
+<pre><code>lots = (balance × risk %) ÷ (stop loss in pips × pip value per lot)</code></pre>
+<p>The result is rounded <strong>down</strong> to your broker's lot step, so the money at risk never exceeds your target. On a $100,000 account risking 0.5% with a 20-pip stop on EUR/USD ($10 a pip per lot), that is $500 ÷ $200 = 2.50 lots.</p>
+<h2>Pip value</h2>
+<p>For pairs quoted in US dollars (EUR/USD, GBP/USD, AUD/USD) on a USD account, one pip on 1.00 lot is worth $10. For other pairs, metals, indices and crypto it depends on the contract size and the exchange rate, so take it from your broker's contract specification.</p>
+<h2>Why risk per trade matters on a challenge</h2>
+<p>The losing-streak lines show how much room a risk level leaves. In the <a href="https://propsim.markets/prop-trading-index?utm_source=github&amp;utm_medium=calculators&amp;utm_campaign=prop-firm-calculators">PropSim Prop Trading Index</a> (week of 2026-10-19), the median risk per trade was 0.59% of the balance for accounts that cleared a phase and 0.78% for accounts that failed. That describes accounts on the PropSim platform and is a difference between two groups, not proof of cause.</p>
+        <h2>Questions</h2>
+        <details><summary>How much should I risk per trade on a prop firm challenge?</summary><p>There is no single right number. Many traders risk between 0.25% and 1% per trade so that a losing streak stays well inside the daily loss limit. Use the calculator to see how many losses in a row your choice allows.</p></details>
+<details><summary>What is the pip value of 1 lot?</summary><p>For USD-quoted forex pairs on a USD account, $10 per pip per standard lot. Other symbols differ; your broker's contract specification lists the value.</p></details>
+<details><summary>Why does the calculator round the lot size down?</summary><p>So the money at risk is never more than you chose. Rounding up by even one lot step would risk slightly more.</p></details>
+        <h2>Embed this calculator</h2>
+        <p>Free to use on your own site. Copy this code:</p>
+        <pre><code>&lt;iframe src="https://propsim-enterprise.github.io/prop-firm-calculators/position-size/?embed" width="100%" height="760" style="border:0" loading="lazy" title="Prop firm position size calculator"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://propsim-enterprise.github.io/prop-firm-calculators/position-size/"&gt;Prop firm position size calculator&lt;/a&gt; by &lt;a href="https://propsim.markets"&gt;PropSim&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <div class="cta">
+          <h2>Thinking of starting a prop firm?</h2>
+          <p>PropSim runs the whole firm on your brand: storefront and checkout, a risk engine that checks every tick against your rules, a trader terminal, payouts, CRM and KYC. Start on the free plan.</p>
+          <a class="button" href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_cta&amp;utm_campaign=prop-firm-calculators">Start your prop firm free</a>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="wrap">Free and open source (MIT). Made by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=calculators_footer&amp;utm_campaign=prop-firm-calculators">PropSim</a>, prop firm software. <a href="https://github.com/PropSim-Enterprise/prop-firm-calculators">Source on GitHub</a>.</div></footer>
+    <script type="module" src="../src/main.ts"></script>
+  </body>
+</html>
